@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href= "resources/css/style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+
+
+        <title>Film Finder</title>
+    </head>
+    <body>
+        <section class="title">
+            <h1>🎥Film & TV Show Finder🎥</h1>
+            <hr class="line">
+        </section>
+        <section class="type">
+            <form class="tvOrFilm">
+                <h2>Film or TV Show?</h2>
+                <input type="radio" id="tv" name="type" value="tvShow">
+                <label for="tv">TV Show</label>
+
+                <input type="radio" id="film" name="type" value="film">
+                <label for="tv">Film</label>
+                
+            </form>
+            <button class="submit-radio submit-button">Select</button>
+        </section>
+        <section class="tvGenre">     
+            <hr class="line">       
+            <form class="genre-tvshow genre-form">
+                <h2>Select a Genre</h2>
+
+                <div class="background-genre">
+                    <select class='genretv-dropdown genre-dropdown' id="genre" name="genre">
+                        <option disabled selected="selected">Select an Option</option>    
+                    </select>
+                </div>
+            </form>
+            <button class="submit-button-dropdown-tv submit-button">Generate</button>
+        </section>
+
+        <section class="movieGenre">     
+            <hr class="line">       
+            <form class="genre-movieGenre genre-form">
+                <h2>Select a Genre</h2>
+
+                <div class="background-genre">
+                    <select class='genreMovie-dropdown genre-dropdown' id="genre" name="genre">
+                        <option disabled selected="selected">Select an Option</option>                            
+                    </select>
+                </div>
+            </form>
+            <button class="submit-button-dropdown-movie submit-button">Generate</button>
+        </section>
+
+        <section class="display">
+            <div class="image-container"> 
+                
+            </div>
+            <div class="titleSection">
+                <h3 class="titleText"></h3>
+            </div>
+
+            <div class="descriptionSection">
+                <p class="descriptionText"></p>
+            </div>
+            
+            <div class="like">
+                <button type="button" class="likeButton">
+                    <img src="./resources/images/thumbsUp.png"/>
+                </button>
+            </div>
+
+            <div class="dislike">
+                <button type="button" class="dislikeButton"><img src="./resources/images/thumbsDown.png"/></button>
+            </div>
+        </section>
+            
+
+        <script src="./resources/scripts/script.js" type="module"></script>
+    </body>
+</html>

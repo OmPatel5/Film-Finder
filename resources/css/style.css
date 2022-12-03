@@ -1,0 +1,235 @@
+body {
+    background-color: #0b0b0d;
+
+    color: white; 
+    margin: 0;
+    font-family: 'Covered By Your Grace', cursive;
+}
+
+h1 {
+    font-size: 100px;
+    /* border: solid white; */
+}
+
+h2 {
+    font-size: 50px;
+}
+
+.line {
+    border: 1px solid rgb(230, 0, 255);
+    width: 100px;
+    height: 20px;
+    border-radius: 50px;
+    
+}
+
+.title {
+    text-align: center;
+    /* border: solid white; */
+    line-height: 1px;
+}
+
+.tvOrFilm {
+    margin-top: 10px;
+    text-align: center;
+    /* border: solid white; */
+    font-size: 30px;
+    line-height: 30px;
+}
+
+
+
+.submit-button {
+    font-family: 'Covered By Your Grace', cursive;
+    font-size: 25px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 50px;
+    padding-left: 50px;
+    color:rgb(255, 255, 255);
+    background-color:rgb(30, 30, 30);
+    border: 1px solid rgb(0, 242, 255);
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: #2e2e2e;
+}
+
+.submit-button:active {
+    color: rgb(0, 195, 255);
+    box-shadow: 0px 0px;
+    padding: 4px 40px 4px 40px;
+}
+
+.genre-form {
+    /* border: 1px solid white; */
+    text-align: center;
+    line-height: 20px;
+    margin-top: 20px;
+}
+
+.background-genre {
+    border-radius:36px;
+    display:inline-block;
+    overflow:hidden;
+    background:#cccccc;
+    border:1px solid #cccccc;
+  }
+
+
+.genre-dropdown {
+    width: 240px;
+    height:30px;
+    border:0px;
+    outline:none;
+  }
+
+.generate {
+    display:block;
+    margin: 0 auto;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color:#2e2e2e;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(46, 140, 187);
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: rgb(255, 85, 0);
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(46, 140, 187);
+}
+
+.movieGenre {
+    display: none;
+}
+
+.tvGenre {
+    display: none;
+}
+
+
+.display {
+    display: none;
+    grid-template-columns: 570px 100px 200px 100px 200px 100px;
+    grid-template-rows: 200px 300px 200px;
+    margin-bottom: 300px;
+    /* border: 1px solid blue; */
+    height: 700px;
+    width: 1320px;
+    column-gap: 50px;
+    margin: 0 auto;
+    margin-bottom: 400px;
+
+}
+
+.image-container {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    margin: 0 auto;
+}
+
+.titleSection {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleText {
+    font-size: 80px;
+    text-align: center;
+}
+
+.descriptionSection {
+    grid-column-start: 2;
+    grid-column-end: 7;
+    display: flex;
+    align-items: top;
+    text-align: center;
+    grid-column-start: 2;
+    
+}
+
+.descriptionText {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+
+img {
+    max-width:100%;
+    max-height:100%;
+}
+
+
+.like {
+    grid-column-start: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('../images/thumbsUp.png'); */
+    
+}
+
+.likeButton {
+    background-color: rgb(182, 255, 182);
+    width: 125px;
+    border-radius: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px 2px rgba(0, 255, 34, 0.8);
+}
+
+
+.likeButton:active {
+    box-shadow: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.dislike {
+    grid-column-start: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dislikeButton {
+    background-color: rgb(255, 182, 182);
+    width: 125px;
+    border-radius: 10px;
+    border: 5px solid rgb(255, 255, 255);
+    box-shadow: 5px 5px 10px 2px rgba(255, 68, 68, 0.8);
+}
+
+.dislikeButton:active {
+    box-shadow: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+
